@@ -1,0 +1,34 @@
+﻿@*@@Model MyWebApplication.Models.Person;*@
+@Model IEnumerable<MyWebApplication.Models.Person>
+
+    <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Person</title>
+    </head>
+    <body>
+        <!--<div>
+            <h1>Hi</h1>
+            <h2>@@Model.Name</h2>
+            <h2>@@Model.Salary</h2>
+        </div>
+        -->
+        <div>
+            <table border="1">
+                <tr>
+                    <th> Name </th>
+                    <th>Salary</th>
+                </tr>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td> @item.Name</td>
+                        <td> @item.Salary</td>
+                    </tr>
+                }
+            </table>
+        </div>
+    </body>
+</html>
