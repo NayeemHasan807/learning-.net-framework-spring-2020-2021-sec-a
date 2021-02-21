@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("IMS_Using_ADO.Net")]
+[assembly: AssemblyTitle("IMS_Using_ASP.Net")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("IMS_Using_ADO.Net")]
+[assembly: AssemblyProduct("IMS_Using_ASP.Net")]
 [assembly: AssemblyCopyright("Copyright ©  2021")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("771d9508-617d-4a42-a52e-ec08caa007f0")]
+[assembly: Guid("f08e9ff5-7569-423b-9081-f6a7de04d6a4")]
 
 // Version information for an assembly consists of the following four values:
 //

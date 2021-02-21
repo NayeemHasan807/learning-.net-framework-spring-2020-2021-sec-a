@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS Using ADO.Net", "IMS Using ADO.Net\IMS Using ADO.Net.csproj", "{771D9508-617D-4A42-A52E-EC08CAA007F0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMS Using ASP.Net", "IMS Using ASP.Net\IMS Using ASP.Net.csproj", "{F08E9FF5-7569-423B-9081-F6A7DE04D6A4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{771D9508-617D-4A42-A52E-EC08CAA007F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{771D9508-617D-4A42-A52E-EC08CAA007F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{771D9508-617D-4A42-A52E-EC08CAA007F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{771D9508-617D-4A42-A52E-EC08CAA007F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08E9FF5-7569-423B-9081-F6A7DE04D6A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08E9FF5-7569-423B-9081-F6A7DE04D6A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08E9FF5-7569-423B-9081-F6A7DE04D6A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08E9FF5-7569-423B-9081-F6A7DE04D6A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {1F8D15AF-06D2-4CD3-88A8-C06FCA17A209}
+		SolutionGuid = {70D897F3-FC8A-402D-8565-CB1598EA43BE}
 	EndGlobalSection
 EndGlobal
