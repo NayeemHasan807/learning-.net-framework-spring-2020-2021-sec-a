@@ -5,9 +5,9 @@ using System.Web;
 
 namespace Inventory_Management_System_With_ADO.Net.Models
 {
-    public class Catagory
+    public class Category
     {
-        public int CatagoryId { get; set; }
-        public string CatagoryName { get; set; }
+        public int CategoryId { get; set; }
+        public string CategoryName { get; set; }
     }
 }

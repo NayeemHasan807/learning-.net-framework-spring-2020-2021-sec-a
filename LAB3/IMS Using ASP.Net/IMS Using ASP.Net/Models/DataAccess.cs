@@ -15,6 +15,7 @@ namespace Inventory_Management_System_With_ADO.Net.Models
         public DataAccess()
         {
             this.connection = new SqlConnection(ConfigurationManager.ConnectionStrings["InventoryDb"].ConnectionString);
+            this.connection.Open();
         }
 
         public SqlDataReader GetData(string sql)
