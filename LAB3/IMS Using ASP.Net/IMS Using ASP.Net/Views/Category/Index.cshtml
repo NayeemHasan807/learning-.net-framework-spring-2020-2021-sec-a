@@ -1,33 +1,33 @@
 ﻿@model IEnumerable<Inventory_Management_System_With_ADO.Net.Models.Category>
 
-@{
-    ViewBag.Title = "Index";
-}
+<!DOCTYPE html>
 
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table" border="1">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.CategoryName)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.CategoryName)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CategoryId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CategoryId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CategoryId })
-        </td>
-    </tr>
-}
-
-</table>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <a href="/Category/Create">Careate New Category</a>
+    </div>
+    <br/>
+    <div>
+        <table border="1">
+            <tr>
+                <td>Category Id</td>
+                <td>Category Name</td>
+                <td>Operations</td>
+            </tr>
+            @foreach(var item in Model)
+            {
+                <tr>
+                    <td>@item.CategoryId</td>
+                    <td>@item.CategoryName</td>
+                    <td><a href="/Category/Edit/@item.CategoryId">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/Category/Delete/@item.CategoryId">Delete</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+﻿@model Inventory_Management_System_With_ADO.Net.Models.Category
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+        <a href="/Category/Index">Go Back</a>
+    </div>
+    <br />
+    <div>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Category Id : </td>
+                    <td>@Model.CategoryId</td>
+                </tr>
+                <tr>
+                    <td>Category Name : </td>
+                    <td>@Model.CategoryName</td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><input type="submit" value="Delete" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
