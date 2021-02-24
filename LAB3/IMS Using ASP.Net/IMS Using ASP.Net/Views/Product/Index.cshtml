@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Inventory_Management_System_With_ADO.Net.Models.Product>
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <a href="/Product/Create">Careate New Product</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/Category/Index">Category List</a>&nbsp;&nbsp;
+    </div>
+    <br />
+    <div>
+        <table border="1">
+            <tr>
+                <td>Product Id</td>
+                <td>Product Name</td>
+                <td>Category Name</td>
+                <td>Operations</td>
+            </tr>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.ProductId</td>
+                    <td>@item.ProductName</td>
+                    <td>@foreach (var item1 in ViewData["categories"] as IList<Inventory_Management_System_With_ADO.Net.Models.Category>)
+                    {
+                        if(item1.CategoryId==item.CategoryId)
+                        {
+                            @item1.CategoryName;
+                            continue;
+                        }
+                    }
+                    </td>
+                    <td><a href="/Product/Edit/@item.ProductId">Edit</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/Product/Delete/@item.ProductId">Delete</a></td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
