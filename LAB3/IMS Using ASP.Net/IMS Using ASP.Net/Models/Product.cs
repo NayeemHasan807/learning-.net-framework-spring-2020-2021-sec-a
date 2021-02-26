@@ -9,6 +9,7 @@ namespace Inventory_Management_System_With_ADO.Net.Models
     {
         public int ProductId { get; set; }
         public string ProductName { get; set; }
+        public float Price { get; set; }
         public int CategoryId { get; set; }
     }
 }

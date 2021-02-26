@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+        <a href="/Product/Index">Go Back</a>
+    </div>
+    <br />
+    <div>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Product Id : </td>
+                    <td>@Model.ProductId</td>
+                </tr>
+                <tr>
+                    <td>Product Name : </td>
+                    <td>@Model.ProductName</td>
+                </tr>
+                <tr>
+                    <td>Category Name : </td>
+                    <td>
+                        @foreach (var item in ViewData["categories"] as IList<Inventory_Management_System_With_ADO.Net.Models.Category>)
+                        {
+                            if (Model.CategoryId == item.CategoryId)
+                            {
+                                @item.CategoryName;
+                                continue;
+                            }
+                        }
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><input type="submit" value="Delete" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

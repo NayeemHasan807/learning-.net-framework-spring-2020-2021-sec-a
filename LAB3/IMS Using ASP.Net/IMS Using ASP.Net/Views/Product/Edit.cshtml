@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Edit</title>
+</head>
+<body>
+    <div>
+        <a href="/Product/Index">Go Back</a>
+    </div>
+    <br />
+    <div>
+        <form method="post">
+            <table>
+                <tr>
+                    <td>Product Name : </td>
+                    <td><input type="text" name="productname" value="@Model.ProductName"/></td>
+                </tr>
+                <tr>
+                    <td>Price : </td>
+                    <td><input type="text" name="price" value="@Model.Price"/></td>
+                </tr>
+                <tr>
+                    <td>Category Name : </td>
+                    <td>
+                        <select name="categoryid" value="@Model.CategoryId">
+                            @foreach (var item in ViewData["categories"] as IList<Inventory_Management_System_With_ADO.Net.Models.Category>)
+                            {
+                                if (Model.CategoryId == item.CategoryId)
+                                {
+                                    <option value="@item.CategoryId" selected>@item.CategoryName</option>
+                                    continue;
+                                }
+                                <option value="@item.CategoryId">@item.CategoryName</option>
+                            }
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td rowspan="2"><input type="submit" value="Create" /></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
