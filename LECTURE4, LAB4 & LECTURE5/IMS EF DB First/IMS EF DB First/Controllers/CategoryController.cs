@@ -23,9 +23,13 @@ namespace IMS_EF_DB_First.Controllers
         [HttpPost]
         public ActionResult Create(Category category)
         {
-            context.Categories.Add(category);
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                context.Categories.Add(category);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View();
         }
         [HttpGet]
         public ActionResult Edit(int id)
@@ -35,11 +39,15 @@ namespace IMS_EF_DB_First.Controllers
         [HttpPost]
         public ActionResult Edit(int id, Category category)
         {
-            category.categoryid = id;
-            var categoryToEdit = context.Categories.Find(id);
-            categoryToEdit.categoryname = category.categoryname;
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                category.categoryid = id;
+                var categoryToEdit = context.Categories.Find(id);
+                categoryToEdit.categoryname = category.categoryname;
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(context.Categories.Find(id));
         }
         [HttpGet]
         public ActionResult Details(int id)

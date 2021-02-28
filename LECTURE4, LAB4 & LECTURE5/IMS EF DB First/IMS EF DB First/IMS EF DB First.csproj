@@ -119,6 +119,8 @@
     <Compile Include="Models\Category.cs">
       <DependentUpon>InventoryModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\CategoryClone.cs" />
+    <Compile Include="Models\CategoryMetaData.cs" />
     <Compile Include="Models\InventoryModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -137,6 +139,8 @@
     <Compile Include="Models\Product.cs">
       <DependentUpon>InventoryModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\ProductClone.cs" />
+    <Compile Include="Models\ProductMetaData.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -24,9 +24,15 @@ namespace IMS_EF_DB_First.Controllers
         [HttpPost]
         public ActionResult Create(Product product)
         {
-            context.Products.Add(product);
-            context.SaveChanges();
-            return RedirectToAction("Index");
+            if(ModelState.IsValid)
+            {
+                context.Products.Add(product);
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewData["categories"] = context.Categories.ToList();
+            return View();
+
         }
         [HttpGet]
         public ActionResult Edit(int id)
@@ -37,14 +43,18 @@ namespace IMS_EF_DB_First.Controllers
         [HttpPost]
         public ActionResult Edit(int id,Product product)
         {
-            product.productid = id;
-            var productToEdit = context.Products.Find(id);
-            productToEdit.productname = product.productname;
-            productToEdit.price= product.price;
-            productToEdit.categoryid = product.categoryid;
-            context.SaveChanges();
-            return RedirectToAction("Index");
-
+            if(ModelState.IsValid)
+            {
+                product.productid = id;
+                var productToEdit = context.Products.Find(id);
+                productToEdit.productname = product.productname;
+                productToEdit.price = product.price;
+                productToEdit.categoryid = product.categoryid;
+                context.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            ViewData["categories"] = context.Categories.ToList();
+            return View(context.Products.Find(id));
         }
         [HttpGet]
         public ActionResult Details(int id)
