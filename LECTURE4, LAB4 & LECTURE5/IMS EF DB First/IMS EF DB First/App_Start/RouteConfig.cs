@@ -16,7 +16,7 @@ namespace IMS_EF_DB_First
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Product", action = "Index", id = UrlParameter.Optional }
+                defaults: new { controller = "Category", action = "Index", id = UrlParameter.Optional }
             );
         }
     }
