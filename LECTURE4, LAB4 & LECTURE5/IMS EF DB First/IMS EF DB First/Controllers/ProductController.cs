@@ -63,5 +63,11 @@ namespace IMS_EF_DB_First.Controllers
             context.SaveChanges();
             return RedirectToAction("Index");
         }
+        [HttpGet]
+        public ActionResult TopTwo()
+        {
+            var list = context.Products.OrderByDescending(x => x.price).Take(2).ToList();
+            return View(list);
+        }
     }
 }

@@ -9,15 +9,13 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Index</title>
+    <title>TopTwo</title>
 </head>
 <body>
     <p>
         @Html.ActionLink("Create New", "Create")
         &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="/Category/Index">Category List</a>
-        &nbsp;&nbsp;|&nbsp;&nbsp;
-        <a href="/Product/TopTwo">Top Two Products</a>
+        <a href="/Product/Index">Back To List</a>
     </p>
     <table class="table" border="1">
         <tr>
@@ -30,7 +28,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Category.categoryname)
             </th>
-            <th>Operations</th>
+            <th></th>
         </tr>
     
     @foreach (var item in Model) {
