@@ -1,0 +1,55 @@
+﻿@model IEnumerable<IMS_Repository_DBFirst.Models.Product>
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="/Category/Index">Category List</a>
+    </p>
+    <table class="table" border="1">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.productname)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category.categoryname)
+            </th>
+            <th>Operations</th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.productname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Category.categoryname)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.productid }) |
+                @Html.ActionLink("Details", "Details", new { id=item.productid }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.productid })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
