@@ -53,5 +53,17 @@ namespace Ch24ShoppingCartMVC.Controllers
             
         }
 
+        [HttpGet]
+        public ActionResult EorD()
+        {
+            CartViewModel model = cart.GetCart();
+            return View(model);
+        }
+        [HttpGet]
+        public ActionResult Delete(string id)
+        {
+            cart.RemoveFromCart(id);
+            return RedirectToAction("List", "Cart");
+        }
     }
 }

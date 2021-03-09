@@ -63,7 +63,7 @@ namespace Ch24ShoppingCartMVC.Models{
                 //Increase the Quantity by the quantity of the added product
                 {
                     //cart.Where(x => x.ProductID == pID).FirstOrDefault().Quantity = model.AddedProduct.Quantity;//[1]
-                    cart.Where(x => x.ProductID == pID).FirstOrDefault().Quantity = model.AddedProduct.Quantity;
+                    cart.Where(x => x.ProductID == pID).FirstOrDefault().Quantity = cart.Where(x => x.ProductID == pID).FirstOrDefault().Quantity + model.AddedProduct.Quantity;
                     HttpContext.Current.Session["cart"] = cart;
                 }
             }
@@ -71,6 +71,14 @@ namespace Ch24ShoppingCartMVC.Models{
         public void ClearCart()
         {
             HttpContext.Current.Session["cart"] = null;
+        }
+
+        public void RemoveFromCart(string id)
+        {
+            List<ProductViewModel> cart = HttpContext.Current.Session["cart"] as List<ProductViewModel>;
+            var inCart = cart.Where(x => x.ProductID == id).FirstOrDefault();
+            cart.Remove(inCart);
+            HttpContext.Current.Session["cart"] = cart;
         }
     }    
 }

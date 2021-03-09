@@ -1,0 +1,26 @@
+﻿@model Ch24ShoppingCartMVC.Models.CartViewModel
+@{
+    ViewBag.Title = "Edit or Delete Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Delete Cart Items</h2>
+<table border="1" cellpadding="10" cellspacing="0">
+    <tr>
+        <td>Product Name</td>
+        <td>Quantity</td>
+        <td>Unit Price</td>
+        <td>Operations</td>
+    </tr>
+    @foreach(var item in Model.Cart)
+    {
+        <tr>
+            <td >@item.Name</td>
+            <td >@item.Quantity</td>
+            <td >@item.UnitPrice</td>
+            <td >
+               <a href="/Cart/Delete/@item.ProductID">Delete</a>
+            </td>
+        </tr>
+    }
+</table>

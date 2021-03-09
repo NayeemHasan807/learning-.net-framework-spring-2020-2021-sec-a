@@ -9,7 +9,8 @@ namespace Ch24ShoppingCartMVC.Controllers {
     public class HomeController : Controller
     {
         [HttpGet]
-        public ViewResult Index() {
+        public ViewResult Index() 
+        {
             ViewBag.HeaderText = "Welcome to the Halloween Store";
             ViewData["FooterText"] = "Where every day is Halloween!";
             return View();

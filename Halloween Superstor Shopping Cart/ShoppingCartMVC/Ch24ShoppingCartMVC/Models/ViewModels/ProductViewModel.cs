@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -13,6 +14,7 @@ namespace Ch24ShoppingCartMVC.Models {
         public string LongDescription { get; set; } 
         public decimal UnitPrice { get; set; }
         public string ImageFile { get; set; }
+        [Required,Range(1,1000,ErrorMessage ="Quentity must be in between 1 to available quantities")]
         public int Quantity { get; set; }
 
         //display item's property values

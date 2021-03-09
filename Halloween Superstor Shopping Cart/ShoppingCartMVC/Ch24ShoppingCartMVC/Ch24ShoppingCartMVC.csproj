@@ -331,6 +331,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Checkout\Index.cshtml" />
     <Content Include="Views\Checkout\Conformation.cshtml" />
+    <Content Include="Views\Cart\EorD.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
