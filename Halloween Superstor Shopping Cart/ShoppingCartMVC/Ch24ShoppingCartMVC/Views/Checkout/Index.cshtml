@@ -1,0 +1,101 @@
+﻿@model Ch24ShoppingCartMVC.Models.ViewModels.PaymentViewModel
+
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Checkout</h1>
+@{var ck = TempData["Checkout"] as Ch24ShoppingCartMVC.Models.ViewModels.CheckoutViewModel; }
+@if (ck.Checkout.Count == 0)
+{
+    <p>You didn't selected any product to buy yet. Please go to our ptoduct section and find the product right for you.</p>
+}
+else
+{
+    <div>
+        <table width="70%" border="1" cellspacing="0" cellpadding="5">
+            <tr>
+                <th>Ordered Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Price</th>
+            </tr>
+            @foreach (var item in ck.Checkout)
+            {
+                <tr>
+                    <td align="center">@item.Name</td>
+                    <td align="center">@item.Quantity</td>
+                    <td align="center">$@item.UnitPrice</td>
+                    <td align="center">
+                        $
+                        @{
+                            var q = item.Quantity;
+                            var p = item.UnitPrice;
+                            var tp = q * p;
+                            @tp;}
+                    </td>
+                </tr>
+            }
+            <tr>
+                <td colspan="3" align="center">Total Price</td>
+                <td align="center">$@ck.TotalPrice</td>
+            </tr>
+            <tr>
+                <td colspan="3" align="center">Total Price Including Tax</td>
+                <td align="center">$@ck.TotalPriceWithTax</td>
+            </tr>
+        </table>
+    </div>
+    <br />
+    <h1>Payment</h1>
+    <div>
+        <form method="post">
+            <table width="100%">
+                <tr>
+                    <td width="10%">Payment Method</td>
+                    <td>
+                        <input type="radio" name="PaymentMethod" value="Visa" /><img src="~/Content/Images/Payment/visa.png" width="60" height="50" />
+                        <input type="radio" name="PaymentMethod" value="MasterCard" /><img src="~/Content/Images/Payment/mastercard.png" width="60" height="50" />
+                        <input type="radio" name="PaymentMethod" value="Paypal" /><img src="~/Content/Images/Payment/paypal.png" width="80" height="50" />
+                    </td>
+                    <td>@Html.ValidationMessageFor(model => model.PaymentMethod, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>
+                        <input type="text" name="Address" />
+                    </td>
+                    <td>@Html.ValidationMessageFor(model => model.Address, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>City</td>
+                    <td>
+                        <input type="text" name="City" />
+                    </td>
+                    <td>@Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>State</td>
+                    <td>
+                        <input type="text" name="State" />
+                    </td>
+                    <td>@Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td>Zip Code</td>
+                    <td>
+                        <input type="text" name="ZipCode" />
+                    </td>
+                    <td>@Html.ValidationMessageFor(model => model.ZipCode, "", new { @class = "text-danger" })</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="Confirm Payment" />
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+}
