@@ -1,7 +1,7 @@
 using System;
 using System.Data.Entity;
 using System.Linq;
-
+using System.ComponentModel.DataAnnotations.Schema;
 namespace IMS_Code_First.Models
 {
     public class CFInventoryDbContext : DbContext
@@ -38,7 +38,35 @@ namespace IMS_Code_First.Models
 
             Database.SetInitializer(new DropCreateDatabaseIfModelChanges<CFInventoryDbContext>());
         }
-        public virtual DbSet<Category> Categories { get; set; }
-        public virtual DbSet<Product> Products { get; set; }
+        //To implement Fluent API we will override this method
+        //Before DB create this method will be called and follow this method logics to create DB
+        //Fluent API uses pipeline concept
+        //Two types of logic one is for table and other is for property
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            /*
+            //Entity Configuration
+            modelBuilder.Entity<Category>().ToTable("Categories");
+            modelBuilder.Entity<Category>().HasKey(k => k.CategoryId);*/
+            
+            //Pipeline Technique
+            //Entity Configuration
+            modelBuilder.Entity<Category>().ToTable("Categories")
+                                           .HasKey<int>(k => k.CategoryId);
+            //Property Configuration
+            modelBuilder.Entity<Category>().Property(x => x.CategoryId).HasColumnName("CategoryId")
+                                                                       .HasColumnOrder(1)
+                                                                       .HasColumnType("int")
+                                                                       .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity)
+                                                                       .IsRequired();
+            modelBuilder.Entity<Category>().Property(x => x.CategoryName).IsRequired()
+                                                                         .HasColumnName("CategoryName")
+                                                                         .HasColumnType("varchar")
+                                                                         .HasMaxLength(20);
+        }
+
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
