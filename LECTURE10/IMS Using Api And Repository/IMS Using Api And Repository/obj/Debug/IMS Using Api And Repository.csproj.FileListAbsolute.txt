@@ -1,0 +1,49 @@
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\obj\Debug\IMS Using Api And Repository.csprojAssemblyReference.cache
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\obj\Debug\IMS Using Api And Repository.csproj.CoreCompileInputs.cache
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\IMS Using Api And Repository.dll.config
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\IMS Using Api And Repository.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\IMS Using Api And Repository.pdb
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\csc.exe
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\csc.exe.config
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\csc.rsp
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\csi.exe
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\csi.rsp
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CodeAnalysis.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.CSharp.Core.targets
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\Microsoft.VisualBasic.Core.targets
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.AppContext.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.Collections.Immutable.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.Diagnostics.StackTrace.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.IO.FileSystem.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.IO.FileSystem.Primitives.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\System.Reflection.Metadata.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\vbc.exe
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\vbc.exe.config
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\vbc.rsp
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\VBCSCompiler.exe
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\roslyn\VBCSCompiler.exe.config
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\EntityFramework.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\EntityFramework.SqlServer.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\Newtonsoft.Json.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Net.Http.Formatting.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Web.Cors.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Web.Http.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Web.Http.WebHost.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\EntityFramework.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\EntityFramework.SqlServer.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\Newtonsoft.Json.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Net.Http.Formatting.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Web.Http.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\System.Web.Http.WebHost.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\obj\Debug\IMS Using Api And Repository.csproj.CopyComplete
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\obj\Debug\IMS Using Api And Repository.dll
+H:\AIUB\10th semester\ADVANCED PROGRAMMING WITH .NET [A]\FinalTerm Code\Lecture10\IMS Using Api And Repository\IMS Using Api And Repository\obj\Debug\IMS Using Api And Repository.pdb
